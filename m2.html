@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <link href="./styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/m1-and-m2.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/m2.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400, 600"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+      <p class="nav__title">Calendar</p>
+      <div class="nav__searchWrapper">
+        <span class="nav__search"></span>
+      </div>
+    </nav>
+    <div id="panel">
+      <div id="panel__topBar">
+        <div class="view">
+          <p class="view__item view__item_selected">Today</p>
+          <p class="view__item">Year</p>
+          <p class="view__item">Month</p>
+          <p class="view__item">Week</p>
+        </div>
+        <p class="dayNumber">23</p>
+        <p class="day">Thursday</p>
+        <p class="month">April</p>
+        <div class="plusButton"><p>+</p></div>
+      </div>
+      <div id="panel__eventsList">
+        <div class="eventWrapper">
+          <div class="event event_purple">
+            <div class="event__time">
+              <p class="time__startTime">10:00</p>
+              <p class="time__dash">-</p>
+              <p class="time__endTime">10:30</p>
+              <p class="time__dayPeriod">AM</p>
+            </div>
+            <p class="event__title">Weekly stand Up</p>
+            <p class="event__location">Video Call</p>
+            <div class="event__participants">
+              <a class="contact">
+                <img
+                  class="contact_img"
+                  src="./assets/contacts/khamkeo-vilaysing-ZlJcEj1If24-unsplash.jpg"
+                />
+              </a>
+              <a class="contact">
+                <img
+                  class="contact_img"
+                  src="./assets/contacts/christian-acosta-w1yTGE0mDwE-unsplash.jpg"
+                />
+              </a>
+              <a class="contact">
+                <p class="contact_imgEmpty">C</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="eventWrapper">
+          <div class="event event_pink">
+            <div class="event__time">
+              <p class="time__startTime">12:00</p>
+              <p class="time__dash">-</p>
+              <p class="time__endTime">1:00</p>
+              <p class="time__dayPeriod">PM</p>
+            </div>
+            <p class="event__title">Lunch with Frank</p>
+            <p class="event__location">Restaurant</p>
+            <div class="event__participants">
+              <a class="contact">
+                <img
+                  class="contact_img"
+                  src="./assets/contacts/gelmis-bartulis-gzlfj8Fjdk0-unsplash.jpg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="eventWrapper">
+          <div class="event event_purple">
+            <div class="event__time">
+              <p class="time__startTime">1:30</p>
+              <p class="time__dash">-</p>
+              <p class="time__endTime">2:00</p>
+              <p class="time__dayPeriod">PM</p>
+            </div>
+            <p class="event__title">Retro</p>
+            <p class="event__location">Video Call</p>
+          </div>
+        </div>
+        <div class="eventWrapper">
+          <div class="event event_purple">
+            <div class="event__time">
+              <p class="time__startTime">3:30</p>
+              <p class="time__dash">-</p>
+              <p class="time__endTime">4:00</p>
+              <p class="time__dayPeriod">PM</p>
+            </div>
+            <p class="event__title">Planning</p>
+            <p class="event__location">Video Call</p>
+          </div>
+        </div>
+        <div class="eventWrapper">
+          <div class="event event_purple">
+            <div class="event__time">
+              <p class="time__startTime">4:30</p>
+              <p class="time__dash">-</p>
+              <p class="time__endTime">5:00</p>
+              <p class="time__dayPeriod">PM</p>
+            </div>
+            <p class="event__title">Sync</p>
+            <p class="event__location">Video Call</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

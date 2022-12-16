@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"),
+    url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"),
+    url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff)
+      format("woff");
+}
+
+* {
+  --primary: #c1c0f0;
+  --secondary: #e3b3f9;
+  --dark: #000000;
+  --graphite-light: #393939;
+  --graphite-lighter: #737373;
+  --graphite-lightest: #c0c0c0;
+  --gray: #ececec;
+  --white: #f4f4f4;
+  --purple: #7b58cb;
+  --pink: #c53066;
+}
+
+* {
+  --text-tiny: 10px;
+  --text-smallest: 12px;
+  --text-smaller: 13px;
+  --text-small: 15px;
+  --text-medium-small: 16px;
+  --text-medium: 18px;
+  --text-large: 23px;
+  --text-larger: 36px;
+  --text-extra-large: 52px;
+}
+
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

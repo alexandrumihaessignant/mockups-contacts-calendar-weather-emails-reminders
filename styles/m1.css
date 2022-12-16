@@ -1,0 +1,96 @@
+#panel__topBar {
+  height: 40px;
+
+  border-bottom: solid 2px var(--gray);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  position: relative;
+}
+
+.filter__text {
+display: inline-block;
+
+  color: var(--graphite-lighter);
+  font-size: var(--text-smallest);
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.filter__text::after {
+  margin-left: 10px;
+
+  content: "\25BC";
+  font-size: var(--text-tiny);
+  color: var(--graphite-lightest);
+}
+
+.filter__text,
+.filter__text::after,
+.filter__menu li:hover {
+  transition: all 0.2s ease-out;
+}
+
+.filter.filter_circle::before {
+  top: 2px;
+  position: relative;
+  margin-right: 10px;
+
+  content: "";
+  display: inline-block;
+
+  width: 10px;
+  height: 10px;
+  border: solid 2px var(--secondary);
+  border-radius: 100%;
+}
+
+.filter__text:hover {
+  color: var(--dark);
+}
+
+.filter__text:hover::after {
+  color: var(--graphite-lighter);
+}
+
+.filter__checkbox {
+  display: none;
+}
+
+.filter__menu {
+  position: absolute;
+  top: 115%;
+
+  padding: 0;
+  background-color: var(--white);
+  list-style-type: none;
+}
+
+.filter.filter_circle .filter__menu {
+  margin-left: 22px;
+}
+
+.filter__checkbox + .filter__menu {
+  display: none;
+}
+
+.filter__checkbox:checked + .filter__menu {
+  display: block;
+}
+
+.filter__menu li {
+  padding: 10px;
+  cursor: pointer;
+
+  font-size: var(--text-smallest);
+  white-space: nowrap;
+}
+
+.filter__menu li:hover {
+  background-color: var(--gray);
+}
